@@ -2,21 +2,28 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
 	<meta charset="utf-8">
 	<title>Index</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></head>
 <body>	
 
-	<form method="post">
-		<div><label> Benutzername: </label></div>
-		<div><input class="form-control" type="text" name="username"/></div>
-		<div><label> Passwort: </label></div>
-		<div><input class="form-control" type="password" name="password"/></div>
+	<div class="container">
+		<h1>Login</h1>
+			<form class="material-form" method="post">
+					<div><label> Benutzername: </label></div>
+					<div><input class="form-control" type="text" name="username"/></div>
+					<div><label> Passwort: </label></div>
+					<div><input class="form-control" type="password" name="password"/></div>		
+					<button class="btn waves-effect waves-light #448aff blue accent-2" type="submit" name="action">Einloggen
+							<i class="material-icons right">send</i>
+					</button>
+			</form>
+			
+	</div>
 
-		<div><input class="btn btn-primary btn-block" style="margin-top: 20px" type="submit" value="Einloggen"/></div>
-	</form>
+	
 
 </body>
 </html>
